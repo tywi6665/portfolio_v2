@@ -1,1 +1,32 @@
-    
+$standard-padding: 15px;
+
+.master-container {
+    height: 100%;
+    display: grid;
+
+    .container {
+        padding: $standard-padding;
+
+        &-name {
+            height: 100vh;
+            max-height: 100vh;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                margin-left: 10%;
+                font-size: 7.5vw;
+            }
+        }
+
+        .sub-container {
+            padding: $standard-padding;
+        }
+    }
+}

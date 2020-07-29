@@ -7,9 +7,11 @@ import SubContainer from './Components/Containers/SubContainer';
 function App() {
   return (
     <MasterContainer>
-      <Container>
+      <Container
+        addedClass="container-name"
+      >
         <SubContainer>
-          <h1>Tyler Winstead</h1>
+          <h1>I am <br /> Tyler Winstead.</h1>
         </SubContainer>
       </Container>
     </MasterContainer>
