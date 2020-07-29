@@ -2,7 +2,7 @@ import React, { Children } from 'react';
 
 const MasterContainer = ({ children }) => {
     return (
-        <div class="master-container">
+        <div className="master-container">
             {children}
         </div>
     );
