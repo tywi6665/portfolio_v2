@@ -21,7 +21,12 @@ $standard-padding: 15px;
 
         a {
             margin: 0 15px;
+            color: #000000;
             text-decoration: none;
+
+            &:hover {
+                color: gray;
+            }
         }
     }
 
