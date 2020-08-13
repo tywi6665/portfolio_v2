@@ -4,6 +4,7 @@ import MasterContainer from './Components/Containers/MasterContainer';
 import Container from './Components/Containers/Container';
 import SubContainer from './Components/Containers/SubContainer';
 import Navbar from "./Components/Navbar";
+import Card from './Components/Card';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         </SubContainer>
       </Container>
       <Container>
-
+        <SubContainer>
+          <Card />
+        </SubContainer>
       </Container>
     </MasterContainer>
   );
