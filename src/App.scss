@@ -116,4 +116,41 @@ $standard-padding: 15px;
             transition: all 0.5s;
         }
     }
+
+    @media screen and (max-width: 900px) {
+        #screen {
+            width: 240px;
+            height: 155px;
+            background: #5337a5 linear-gradient(-75deg, #5337a5 72.9%, rgba(white, 0.25) 72.9%);
+
+            &::after {
+                border-radius: 0.7em;
+            }
+
+            &::before {
+                background: transparent;
+            }
+        }
+
+        #keyboard {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        #screen {
+            width: 90px;
+            height: 155px;
+
+            &::after {
+                left: -5px;
+                right: -5px;
+            }
+
+            &::before {
+                background: rgba(white, 0.2);
+            }
+        }
+    }
 }
