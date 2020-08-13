@@ -5,6 +5,7 @@ import Container from './Components/Containers/Container';
 import SubContainer from './Components/Containers/SubContainer';
 import Navbar from "./Components/Navbar";
 import Card from './Components/Card';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Card />
         </SubContainer>
       </Container>
+      <Footer />
     </MasterContainer>
   );
 }
