@@ -19,12 +19,16 @@ function App() {
           <h1>I am <br /> Tyler Winstead.</h1>
         </SubContainer>
       </Container>
-      <Container>
+      <Container
+        addedClass="container-card"
+      >
         <SubContainer>
           <Card />
         </SubContainer>
       </Container>
-      <Container>
+      <Container
+        addedClass="container-file-window"
+      >
         <FileWindow />
       </Container>
       <Footer />

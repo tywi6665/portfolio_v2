@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf/dist/entry.webpack';
+
+import pdfFile from '../resources/Tyler_Winstead_Resume.pdf';
 
 const FileWindow = () => {
+
+    const [pdf, setPdf] = useState(pdfFile)
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+
+    console.log(pdfFile)
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+    }
+
     return (
         <div className="file-window">
-            <iframe src="./resources/Tyler_Winstead_Resume.pdf" title="My Resume"></iframe>
+            <Document
+                file={pdf}
+                renderMode="svg"
+                onLoadSuccess={onDocumentLoadSuccess}
+            >
+                <Page pageNumber={pageNumber} />
+            </Document>
         </div>
     );
 }
