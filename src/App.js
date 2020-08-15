@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import MasterContainer from './Components/Containers/MasterContainer';
 import Container from './Components/Containers/Container';
@@ -9,6 +9,25 @@ import Footer from './Components/Footer';
 import FileWindow from './Components/FileWindow';
 
 function App() {
+
+  const [data, setData] = useState([
+    {
+      title: "Card Title",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
+      animation: ""
+    },
+    {
+      title: "Card Title",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
+      animation: ""
+    },
+    {
+      title: "Card Title",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
+      animation: ""
+    }
+  ])
+
   return (
     <MasterContainer>
       <Navbar />
@@ -22,9 +41,15 @@ function App() {
       <Container
         addedClass="container-card"
       >
-        <SubContainer>
-          <Card />
-        </SubContainer>
+        {data.map((data, i) => (
+          <SubContainer>
+            <Card
+              title={data.title}
+              description={data.description}
+              animation={data.animation}
+            />
+          </SubContainer>
+        ))}
       </Container>
       <Container
         addedClass="container-file-window"
