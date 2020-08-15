@@ -11,7 +11,7 @@ const Card = ({ info }) => {
                 <div className="card-info">
                     <h2>Card Title</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.</p>
-                    <div class="icons">
+                    <div className="icons">
 
                     </div>
                 </div>

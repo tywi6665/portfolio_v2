@@ -6,6 +6,7 @@ import SubContainer from './Components/Containers/SubContainer';
 import Navbar from "./Components/Navbar";
 import Card from './Components/Card';
 import Footer from './Components/Footer';
+import FileWindow from './Components/FileWindow';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         <SubContainer>
           <Card />
         </SubContainer>
+      </Container>
+      <Container>
+        <FileWindow />
       </Container>
       <Footer />
     </MasterContainer>
