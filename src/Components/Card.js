@@ -37,12 +37,14 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
                     </div>
                     <div className="card-info-links">
                         <div className="link">
-                            <img
-                                data-tip="GitHub Repo"
-                                data-for={`${links[0]}`}
-                                src={`./graphics/icons8-github.svg`} />
+                            <a href={links[0]} target="_blank">
+                                <img
+                                    data-tip="GitHub Repo"
+                                    data-for={links[0]}
+                                    src={`./graphics/icons8-github.svg`} />
+                            </a>
                             <ReactTooltip
-                                id={`${links[0]}`}
+                                id={links[0]}
                                 className="tooltip"
                                 place="top"
                                 type="light"
@@ -51,12 +53,14 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
                             />
                         </div>
                         <div className="link">
-                            <img
-                                data-tip="Live Link"
-                                data-for={`${links[1]}`}
-                                src={`./graphics/icons8-google-code.svg`} />
+                            <a href={links[1]} target="_blank">
+                                <img
+                                    data-tip="Live Link"
+                                    data-for={links[1]}
+                                    src={`./graphics/icons8-google-code.svg`} />
+                            </a>
                             <ReactTooltip
-                                id={`${links[1]}`}
+                                id={links[1]}
                                 className="tooltip"
                                 place="top"
                                 type="light"
