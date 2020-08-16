@@ -12,22 +12,28 @@ function App() {
 
   const [data, setData] = useState([
     {
-      title: "Card Title",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
-      icons: [["icons8-react-native", "React Popover"], ["icons8-react-native", "React Popover"]],
-      animation: ""
+      title: "Chromaticity",
+      subTitle: "An experiment in D3.js",
+      description: "A React based web application that utilizes custom designed D3.js elements and animations to generate and analyze images based on specified color and existing color palettes.",
+      icons: [["icons8-react-native", "Built with React"], ["icons8-amazon-s3", "Amazon Web Services/s3"]],
+      animation: "",
+      links: ["https://github.com/tywi6665/Chromaticity", "https://chromaticity6665.herokuapp.com/"]
     },
     {
       title: "Card Title",
+      subTitle: "",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
       icons: [["icons8-react-native", "React Popover"], ["icons8-react-native", "React Popover"]],
-      animation: ""
+      animation: "",
+      links: ["", ""]
     },
     {
       title: "Card Title",
+      subTitle: "",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
       icons: [["icons8-react-native", "React Popover"], ["icons8-react-native", "React Popover"]],
-      animation: ""
+      animation: "",
+      links: ["", ""]
     }
   ])
 
@@ -48,9 +54,11 @@ function App() {
           <SubContainer key={i}>
             <Card
               title={data.title}
+              subTitle={data.subTitle}
               description={data.description}
               icons={data.icons}
               animation={data.animation}
+              links={data.links}
             />
           </SubContainer>
         ))}
