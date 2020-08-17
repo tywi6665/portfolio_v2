@@ -58,153 +58,161 @@ $standard-padding: 15px;
         }
     }
 
-    #screen {
-        width: 300px;
-        height: 200px;
-        background: #5337a5 linear-gradient(-75deg, #5337a5 72.2%, rgba(white, 0.25) 72.2%);
-        margin: 50px auto 0 auto;
-        position: relative;
-        transition: all 0.5s;
+    .container-card {
+        background: url(wave-1.svg) top left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        z-index: -1;
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            right: -15px;
-            bottom: -15px;
-            background: #1d1d1d linear-gradient(-75deg, #1d1d1d 70%, rgba(white, 0.25) 70%);
-            border-top-left-radius: 0.7em;
-            border-top-right-radius: 0.7em;
-            z-index: -2;
+        #screen {
+            width: 300px;
+            height: 200px;
+            background: #5337a5 linear-gradient(-75deg, #5337a5 72.2%, rgba(white, 0.25) 72.2%);
+            margin: 50px auto 0 auto;
+            position: relative;
             transition: all 0.5s;
-        }
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            top: -10px;
-            left: calc(50% - 5px);
-            background: rgba(white, 0.2);
-            border-radius: 50%;
-            transition: all 0.5s;
-        }
-    }
-
-    .card {
-        .card-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-
-            .card-info {
-                flex-basis: 50%;
-                display: flex;
-
-                .card-info-inner {
-                    flex-basis: 75%;
-                }
-
-                .card-info-links {
-                    flex-basis: 25%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        width: 3em;
-                        margin: 5px 20px;
-                        cursor: pointer;
-                    }
-
-                    .tooltip {
-                        box-shadow: 0px 5px 10px 0 rgba(16, 36, 94, 0.2);
-                    }
-                }
+            &::after {
+                content: "";
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                right: -15px;
+                bottom: -15px;
+                background: #1d1d1d linear-gradient(-75deg, #1d1d1d 70%, rgba(white, 0.25) 70%);
+                border-top-left-radius: 0.7em;
+                border-top-right-radius: 0.7em;
+                z-index: -2;
+                transition: all 0.5s;
             }
 
-            .card-screen {
-                flex-basis: 50%;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: -10px;
+                left: calc(50% - 5px);
+                background: rgba(white, 0.2);
+                border-radius: 50%;
+                transition: all 0.5s;
+            }
+        }
 
-                #keyboard {
-                    width: 440px;
-                    height: 15px;
-                    background: #d8d8d8;
-                    margin: 10px auto;
-                    border-bottom: 5px solid rgba(black, 0.45);
-                    border-bottom-left-radius: 0.4em;
-                    border-bottom-right-radius: 0.4em;
-                    position: relative;
-                    transition: all 0.5s;
+        .card {
+            .card-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 43%;
-                        right: 43%;
-                        bottom: 50%;
-                        background: rgba(black, 0.3);
-                        border-bottom-left-radius: 0.3em;
-                        border-bottom-right-radius: 0.3em;
-                        box-shadow: inset 5px 0 5px -5px rgba(black, 0.5), inset -5px 0 5px -5px rgba(black, 0.5);
-                        transition: all 0.5s;
+                .card-info {
+                    flex-basis: 50%;
+                    display: flex;
+
+                    .card-info-inner {
+                        flex-basis: 75%;
+
+                        h4 {
+                            text-align: center;
+                        }
+                    }
+
+                    .card-info-links {
+                        flex-basis: 25%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 3em;
+                            margin: 5px 20px;
+                            cursor: pointer;
+                        }
                     }
                 }
 
-                @media screen and (max-width: 900px) {
-                    #screen {
-                        width: 240px;
-                        height: 155px;
-                        background: #5337a5 linear-gradient(-75deg, #5337a5 72.9%, rgba(white, 0.25) 72.9%);
-
-                        &::after {
-                            border-radius: 0.7em;
-                        }
-
-                        &::before {
-                            background: transparent;
-                        }
-                    }
+                .card-screen {
+                    flex-basis: 50%;
 
                     #keyboard {
-                        width: 0;
-                        height: 0;
-                    }
-                }
-
-                @media screen and (max-width: 650px) {
-                    #screen {
-                        width: 90px;
-                        height: 155px;
-
-                        &::after {
-                            left: -5px;
-                            right: -5px;
-                        }
+                        width: 440px;
+                        height: 15px;
+                        background: #d8d8d8;
+                        margin: 10px auto;
+                        border-bottom: 5px solid rgba(black, 0.45);
+                        border-bottom-left-radius: 0.4em;
+                        border-bottom-right-radius: 0.4em;
+                        position: relative;
+                        transition: all 0.5s;
 
                         &::before {
-                            background: rgba(white, 0.2);
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 43%;
+                            right: 43%;
+                            bottom: 50%;
+                            background: rgba(black, 0.3);
+                            border-bottom-left-radius: 0.3em;
+                            border-bottom-right-radius: 0.3em;
+                            box-shadow: inset 5px 0 5px -5px rgba(black, 0.5), inset -5px 0 5px -5px rgba(black, 0.5);
+                            transition: all 0.5s;
+                        }
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        #screen {
+                            width: 240px;
+                            height: 155px;
+                            background: #5337a5 linear-gradient(-75deg, #5337a5 72.9%, rgba(white, 0.25) 72.9%);
+
+                            &::after {
+                                border-radius: 0.7em;
+                            }
+
+                            &::before {
+                                background: transparent;
+                            }
+                        }
+
+                        #keyboard {
+                            width: 0;
+                            height: 0;
+                        }
+                    }
+
+                    @media screen and (max-width: 650px) {
+                        #screen {
+                            width: 90px;
+                            height: 155px;
+
+                            &::after {
+                                left: -5px;
+                                right: -5px;
+                            }
+
+                            &::before {
+                                background: rgba(white, 0.2);
+                            }
                         }
                     }
                 }
             }
-        }
 
-        .icons {
-            display: flex;
-            justify-content: center;
+            .icons {
+                display: flex;
+                justify-content: center;
 
-            img {
-                width: 3em;
-                margin: 5px 20px;
+                img {
+                    width: 3em;
+                    margin: 5px 20px;
+                }
             }
 
             .tooltip {
                 box-shadow: 0px 5px 10px 0 rgba(16, 36, 94, 0.2);
+                opacity: 1;
             }
         }
     }

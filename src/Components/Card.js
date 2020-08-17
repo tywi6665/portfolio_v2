@@ -14,6 +14,7 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
                         <h2>{title}</h2>
                         <h3>{subTitle}</h3>
                         <p>{description}</p>
+                        <h4>Technologies/Frameworks Used:</h4>
                         <div className="icons">
                             {icons.map((icon, i) => (
                                 <>

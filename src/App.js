@@ -15,25 +15,25 @@ function App() {
       title: "Chromaticity",
       subTitle: "An experiment in D3.js",
       description: "A React based web application that utilizes custom designed D3.js elements and animations to generate and analyze images based on specified color and existing color palettes.",
-      icons: [["icons8-react-native", "Built with React"], ["icons8-amazon-s3", "Amazon Web Services/s3"]],
+      icons: [["icons8-react-native", "Built with React"], ["icons8-amazon-s3", "Amazon Web Services/s3"], ["data vis", "Data Visulization/D3.js"]],
       animation: "",
       links: ["https://github.com/tywi6665/Chromaticity", "https://chromaticity6665.herokuapp.com/"]
     },
     {
-      title: "Card Title",
-      subTitle: "",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
-      icons: [["icons8-react-native", "React Popover"], ["icons8-react-native", "React Popover"]],
+      title: "Rain Or Shine",
+      subTitle: "Weather Dependant CSS Art",
+      description: "A React based weather application that combines a css landscape and a D3.js plot to convey meaningful current and future weather information in a artistic way.",
+      icons: [["icons8-react-native", "Built with React"], ["data vis", "Data Visulization/D3.js"]],
       animation: "",
-      links: ["", ""]
+      links: ["https://github.com/tywi6665/Rain-or-Shine/", "https://tywi6665.github.io/Rain-or-Shine/"]
     },
     {
-      title: "Card Title",
-      subTitle: "",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tortor nulla. Sed varius magna felis, eu tempus justo mattis a. Nunc ultrices fringilla eros sit amet efficitur. Pellentesque vitae sollicitudin tortor. Mauris aliquam euismod sem quis malesuada. Fusce vestibulum placerat vulputate.",
-      icons: [["icons8-react-native", "React Popover"], ["icons8-react-native", "React Popover"]],
+      title: "Out of This World",
+      subTitle: "There's no better way to explore the solar system",
+      description: "A React based application that uses D3.js to educate how amazing our corner of the universe is. Now go forth and explore!",
+      icons: [["icons8-react-native", "Built with React"], ["data vis", "Data Visulization/D3.js"]],
       animation: "",
-      links: ["", ""]
+      links: ["https://github.com/tywi6665/Out-of-This-World", "https://out-of-this-world.herokuapp.com/"]
     }
   ])
 
