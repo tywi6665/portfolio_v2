@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar";
 import Card from './Components/Card';
 import Footer from './Components/Footer';
 import FileWindow from './Components/FileWindow';
+import Contact from './Components/Contact';
 
 function App() {
 
@@ -71,7 +72,7 @@ function App() {
       <Container
         addedClass="container-contact"
       >
-
+        <Contact />
       </Container>
       <Footer />
     </MasterContainer>
