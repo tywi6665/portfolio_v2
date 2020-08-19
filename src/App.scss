@@ -59,43 +59,54 @@ $standard-padding: 15px;
     }
 
     .container-card {
-        background: url(wave-1.svg) top left;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        z-index: -1;
+        position: relative;
 
-        #screen {
-            width: 300px;
-            height: 200px;
-            background: #5337a5 linear-gradient(-75deg, #5337a5 72.2%, rgba(white, 0.25) 72.2%);
-            margin: 50px auto 0 auto;
-            position: relative;
-            transition: all 0.5s;
+        &::before {
+            content: url(wave-1.svg);
+            position: absolute;
+            width: auto;
+            height: auto;
+            height: 25%;
+            top: -125px;
+            z-index: -10;
+        }
 
-            &::after {
-                content: "";
-                position: absolute;
-                top: -15px;
-                left: -15px;
-                right: -15px;
-                bottom: -15px;
-                background: #1d1d1d linear-gradient(-75deg, #1d1d1d 70%, rgba(white, 0.25) 70%);
-                border-top-left-radius: 0.7em;
-                border-top-right-radius: 0.7em;
-                z-index: -2;
+        .card-screen {
+            z-index: 5;
+
+            #screen {
+                width: 300px;
+                height: 200px;
+                background: #5337a5 linear-gradient(-75deg, #5337a5 72.2%, rgba(white, 0.25) 72.2%);
+                margin: 50px auto 0 auto;
+                position: relative;
                 transition: all 0.5s;
-            }
 
-            &::before {
-                content: "";
-                position: absolute;
-                width: 5px;
-                height: 5px;
-                top: -10px;
-                left: calc(50% - 5px);
-                background: rgba(white, 0.2);
-                border-radius: 50%;
-                transition: all 0.5s;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -15px;
+                    left: -15px;
+                    right: -15px;
+                    bottom: -15px;
+                    background: #1d1d1d linear-gradient(-75deg, #1d1d1d 70%, rgba(white, 0.25) 70%);
+                    border-top-left-radius: 0.7em;
+                    border-top-right-radius: 0.7em;
+                    z-index: -2;
+                    transition: all 0.5s;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    top: -10px;
+                    left: calc(50% - 5px);
+                    background: rgba(white, 0.2);
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                }
             }
         }
 
@@ -213,6 +224,7 @@ $standard-padding: 15px;
             .tooltip {
                 box-shadow: 0px 5px 10px 0 rgba(16, 36, 94, 0.2);
                 opacity: 1;
+                z-index: 10;
             }
         }
     }

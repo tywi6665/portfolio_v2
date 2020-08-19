@@ -15,7 +15,7 @@ function App() {
       title: "Chromaticity",
       subTitle: "An experiment in D3.js",
       description: "A React based web application that utilizes custom designed D3.js elements and animations to generate and analyze images based on specified color and existing color palettes.",
-      icons: [["icons8-react-native", "Built with React"], ["icons8-amazon-s3", "Amazon Web Services/s3"], ["data vis", "Data Visulization/D3.js"]],
+      icons: [["icons8-react-native.svg", "Built with React"], ["icons8-amazon-s3.svg", "Amazon Web Services/s3"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
       animation: "",
       links: ["https://github.com/tywi6665/Chromaticity", "https://chromaticity6665.herokuapp.com/"]
     },
@@ -23,7 +23,7 @@ function App() {
       title: "Rain Or Shine",
       subTitle: "Weather Dependant CSS Art",
       description: "A React based weather application that combines a css landscape and a D3.js plot to convey meaningful current and future weather information in a artistic way.",
-      icons: [["icons8-react-native", "Built with React"], ["data vis", "Data Visulization/D3.js"]],
+      icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
       animation: "",
       links: ["https://github.com/tywi6665/Rain-or-Shine/", "https://tywi6665.github.io/Rain-or-Shine/"]
     },
@@ -31,7 +31,7 @@ function App() {
       title: "Out of This World",
       subTitle: "There's no better way to explore the solar system",
       description: "A React based application that uses D3.js to educate how amazing our corner of the universe is. Now go forth and explore!",
-      icons: [["icons8-react-native", "Built with React"], ["data vis", "Data Visulization/D3.js"]],
+      icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
       animation: "",
       links: ["https://github.com/tywi6665/Out-of-This-World", "https://out-of-this-world.herokuapp.com/"]
     }

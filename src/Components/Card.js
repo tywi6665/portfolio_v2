@@ -22,7 +22,7 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
                                         <img
                                             data-tip={icon[1]}
                                             data-for={`${icon}-${i}`}
-                                            src={`./graphics/${icon[0]}.svg`} />
+                                            src={`./graphics/${icon[0]}`} />
                                     </div>
                                     <ReactTooltip
                                         id={`${icon}-${i}`}
