@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 
-import pdfFile from '../resources/Tyler_Winstead_Resume.pdf';
+import pdfFile from '../resources/Tyler_Winstead_Resume_Redacted.pdf';
 
 const FileWindow = () => {
 

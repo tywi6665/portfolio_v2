@@ -68,6 +68,11 @@ function App() {
       >
         <FileWindow />
       </Container>
+      <Container
+        addedClass="container-contact"
+      >
+
+      </Container>
       <Footer />
     </MasterContainer>
   );
