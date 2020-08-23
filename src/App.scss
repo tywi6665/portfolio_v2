@@ -85,7 +85,7 @@ $standard-padding: 15px;
             .screen {
                 width: 300px;
                 height: 200px;
-                background: #5337a5 linear-gradient(-75deg, #5337a5 72.2%, rgba(white, 0.25) 72.2%);
+                background: transparent linear-gradient(-75deg, transparent 72.2%, rgba(white, 0.25) 72.2%);
                 margin: 50px auto 0 auto;
                 position: relative;
                 transition: all 0.5s;
@@ -116,9 +116,54 @@ $standard-padding: 15px;
                     transition: all 0.5s;
                 }
 
-                video {
+                .browser {
                     height: 100%;
                     width: 100%;
+
+                    .browser-top {
+                        height: 10px;
+                        width: 100%;
+                        background: ghostwhite;
+                        border-top-left-radius: 2px;
+                        border-top-right-radius: 2px;
+                        position: relative;
+
+                        span {
+                            height: 4px;
+                            width: 4px;
+                            position: absolute;
+                            top: 3px;
+                            border-radius: 50%;
+                        }
+
+                        .red {
+                            left: 2px;
+                            background: red;
+                        }
+
+                        .yellow {
+                            left: 8px;
+                            background: gold;
+                        }
+
+                        .green {
+                            left: 14px;
+                            background: green;
+                        }
+                    }
+
+                    video {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .browser-bottom {
+                        height: 10px;
+                        width: 100%;
+                        background: ghostwhite;
+                        border-bottom-left-radius: 2px;
+                        border-bottom-right-radius: 2px;
+                    }
                 }
             }
         }

@@ -7,9 +7,17 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
             <div className="card-inner">
                 <div className="card-screen">
                     <div className="screen">
-                        <video autoplay="true" loop>
-                            <source src={`./videos/${animation}.mp4`} type="video/mp4" />
-                        </video>
+                        <div className="browser">
+                            <div className="browser-top">
+                                <span className="red"></span>
+                                <span className="yellow"></span>
+                                <span className="green"></span>
+                            </div>
+                            <video autoplay="true" loop>
+                                <source src={`./videos/${animation}.mp4`} type="video/mp4" />
+                            </video>
+                            <div className="browser-bottom"></div>
+                        </div>
                     </div>
                     <div className="keyboard"></div>
                 </div>
