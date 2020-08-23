@@ -116,53 +116,62 @@ $standard-padding: 15px;
                     transition: all 0.5s;
                 }
 
-                .browser {
+                .browser-wrapper {
                     height: 100%;
                     width: 100%;
 
-                    .browser-top {
-                        height: 10px;
-                        width: 100%;
-                        background: ghostwhite;
-                        border-top-left-radius: 2px;
-                        border-top-right-radius: 2px;
-                        position: relative;
+                    .browser {
+                        .browser-top {
+                            height: 10px;
+                            width: 100%;
+                            background: ghostwhite;
+                            border-top-left-radius: 2px;
+                            border-top-right-radius: 2px;
+                            position: relative;
 
-                        span {
-                            height: 4px;
-                            width: 4px;
-                            position: absolute;
-                            top: 3px;
-                            border-radius: 50%;
+                            span {
+                                height: 4px;
+                                width: 4px;
+                                position: absolute;
+                                top: 3px;
+                                border-radius: 50%;
+                            }
+
+                            .red {
+                                left: 2px;
+                                background: red;
+                            }
+
+                            .yellow {
+                                left: 8px;
+                                background: gold;
+                            }
+
+                            .green {
+                                left: 14px;
+                                background: green;
+                            }
                         }
 
-                        .red {
-                            left: 2px;
-                            background: red;
+                        .video {
+                            height: 180px;
+                            width: 100%;
+                            overflow: hidden;
+
+                            video {
+                                object-fit: cover;
+                                height: 100%;
+                                width: 100%;
+                            }
                         }
 
-                        .yellow {
-                            left: 8px;
-                            background: gold;
+                        .browser-bottom {
+                            height: 10px;
+                            width: 100%;
+                            background: ghostwhite;
+                            border-bottom-left-radius: 2px;
+                            border-bottom-right-radius: 2px;
                         }
-
-                        .green {
-                            left: 14px;
-                            background: green;
-                        }
-                    }
-
-                    video {
-                        height: 100%;
-                        width: 100%;
-                    }
-
-                    .browser-bottom {
-                        height: 10px;
-                        width: 100%;
-                        background: ghostwhite;
-                        border-bottom-left-radius: 2px;
-                        border-bottom-right-radius: 2px;
                     }
                 }
             }
@@ -242,6 +251,10 @@ $standard-padding: 15px;
 
                             &::before {
                                 background: transparent;
+                            }
+
+                            .video {
+                                height: 135px;
                             }
                         }
 
