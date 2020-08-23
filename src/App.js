@@ -25,7 +25,7 @@ function App() {
       subTitle: "Weather Dependant CSS Art",
       description: "A React based weather application that combines a css landscape and a D3.js plot to convey meaningful current and future weather information in a artistic way.",
       icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
-      animation: "",
+      animation: "rain-or-shine",
       links: ["https://github.com/tywi6665/Rain-or-Shine/", "https://tywi6665.github.io/Rain-or-Shine/"]
     },
     {

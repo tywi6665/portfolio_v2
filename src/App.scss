@@ -82,7 +82,7 @@ $standard-padding: 15px;
         .card-screen {
             z-index: 5;
 
-            #screen {
+            .screen {
                 width: 300px;
                 height: 200px;
                 background: #5337a5 linear-gradient(-75deg, #5337a5 72.2%, rgba(white, 0.25) 72.2%);
@@ -114,6 +114,11 @@ $standard-padding: 15px;
                     background: rgba(white, 0.2);
                     border-radius: 50%;
                     transition: all 0.5s;
+                }
+
+                video {
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
@@ -154,7 +159,7 @@ $standard-padding: 15px;
                 .card-screen {
                     flex-basis: 50%;
 
-                    #keyboard {
+                    .keyboard {
                         width: 440px;
                         height: 15px;
                         background: #d8d8d8;
@@ -181,7 +186,7 @@ $standard-padding: 15px;
                     }
 
                     @media screen and (max-width: 900px) {
-                        #screen {
+                        .screen {
                             width: 240px;
                             height: 155px;
                             background: #5337a5 linear-gradient(-75deg, #5337a5 72.9%, rgba(white, 0.25) 72.9%);
@@ -195,14 +200,14 @@ $standard-padding: 15px;
                             }
                         }
 
-                        #keyboard {
+                        .keyboard {
                             width: 0;
                             height: 0;
                         }
                     }
 
                     @media screen and (max-width: 650px) {
-                        #screen {
+                        .screen {
                             width: 90px;
                             height: 155px;
 
@@ -225,7 +230,7 @@ $standard-padding: 15px;
 
                 img {
                     width: 3em;
-                    margin: 5px 20px;
+                    margin: 5px 15px;
                 }
             }
 
@@ -233,6 +238,22 @@ $standard-padding: 15px;
                 box-shadow: 0px 5px 10px 0 rgba(16, 36, 94, 0.2);
                 opacity: 1;
                 z-index: 10;
+            }
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .card-inner {
+            // display: flex;
+            flex-direction: column;
+
+            .card-info-inner {
+                flex-basis: 85%;
+                padding: $standard-padding;
+            }
+
+            .card-info-links {
+                flex-basis: 15%;
             }
         }
     }

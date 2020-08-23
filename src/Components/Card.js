@@ -6,8 +6,12 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
         <div className="card">
             <div className="card-inner">
                 <div className="card-screen">
-                    <div id="screen"></div>
-                    <div id="keyboard"></div>
+                    <div className="screen">
+                        <video autoplay="true" loop>
+                            <source src={`./videos/${animation}.mp4`} type="video/mp4" />
+                        </video>
+                    </div>
+                    <div className="keyboard"></div>
                 </div>
                 <div className="card-info">
                     <div className="card-info-inner">
