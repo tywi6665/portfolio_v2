@@ -25,10 +25,34 @@ $standard-padding: 15px;
             margin: 0 15px;
             color: #000000;
             text-decoration: none;
+            cursor: pointer;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 120%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: #000000;
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: height 0.3s, opacity 0.3s, transform 0.3s;
+            }
 
             &:hover {
                 color: gray;
+
+                &::after {
+                    height: 2px;
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
             }
+        }
+
+        .active {
         }
     }
 

@@ -36,14 +36,14 @@ function App() {
       animation: "",
       links: ["https://github.com/tywi6665/Out-of-This-World", "https://out-of-this-world.herokuapp.com/"]
     },
-    {
-      title: "Portfolio 1.0",
-      subTitle: "My first portfolio",
-      description: "",
-      icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
-      animation: "portfolio_v1",
-      links: ["https://github.com/tywi6665/Portfolio", "https://tywi6665.herokuapp.com/main"]
-    }
+    // {
+    //   title: "Portfolio 1.0",
+    //   subTitle: "My first portfolio",
+    //   description: "",
+    //   icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
+    //   animation: "portfolio_v1",
+    //   links: ["https://github.com/tywi6665/Portfolio", "https://tywi6665.herokuapp.com/main"]
+    // }
   ])
 
   return (
@@ -51,6 +51,7 @@ function App() {
       <Navbar />
       <Container
         addedClass="container-name"
+        addedID="name-section"
       >
         <SubContainer>
           <h1>I am <br /> Tyler Winstead.</h1>
@@ -58,6 +59,7 @@ function App() {
       </Container>
       <Container
         addedClass="container-card"
+        addedID="projects-section"
       >
         {data.map((data, i) => (
           <SubContainer key={i}>
@@ -74,11 +76,13 @@ function App() {
       </Container>
       <Container
         addedClass="container-file-window"
+        addedID="resume-section"
       >
         <FileWindow />
       </Container>
       <Container
         addedClass="container-contact"
+        addedID="contact-section"
       >
         <Contact />
       </Container>
