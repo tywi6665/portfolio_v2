@@ -17,7 +17,7 @@ function App() {
       subTitle: "An experiment in D3.js",
       description: "A React based web application that utilizes custom designed D3.js elements and animations to generate and analyze images based on specified color and existing color palettes.",
       icons: [["icons8-react-native.svg", "Built with React"], ["icons8-amazon-s3.svg", "Amazon Web Services/s3"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
-      animation: "",
+      animation: "chromaticity",
       links: ["https://github.com/tywi6665/Chromaticity", "https://chromaticity6665.herokuapp.com/"]
     },
     {
@@ -41,7 +41,7 @@ function App() {
       subTitle: "My first portfolio",
       description: "",
       icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
-      animation: "",
+      animation: "portfolio_v1",
       links: ["https://github.com/tywi6665/Portfolio", "https://tywi6665.herokuapp.com/main"]
     }
   ])

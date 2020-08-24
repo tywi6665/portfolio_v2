@@ -15,9 +15,15 @@ const Card = ({ title, subTitle, description, icons, animation, links }) => {
                                     <span className="green"></span>
                                 </div>
                                 <div className="video">
-                                    <video autoplay="autoplay" loop>
+                                    <video autoPlay="true" loop>
                                         <source src={`./videos/${animation}.mp4`} type="video/mp4" />
                                     </video>
+                                    <div className="shapes">
+                                        <span className="circle"></span>
+                                        <span className="short-bar"></span>
+                                        <span className="long-bar"></span>
+                                        <span className="red-bar"></span>
+                                    </div>
                                 </div>
                                 <div className="browser-bottom"></div>
                             </div>

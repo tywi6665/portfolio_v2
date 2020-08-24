@@ -124,7 +124,7 @@ $standard-padding: 15px;
                         .browser-top {
                             height: 10px;
                             width: 100%;
-                            background: ghostwhite;
+                            background: silver;
                             border-top-left-radius: 2px;
                             border-top-right-radius: 2px;
                             position: relative;
@@ -157,18 +157,101 @@ $standard-padding: 15px;
                             height: 180px;
                             width: 100%;
                             overflow: hidden;
+                            background: white;
 
                             video {
-                                object-fit: cover;
-                                height: 100%;
+                                // object-fit: cover;
+                                // height: 100%;
                                 width: 100%;
+                                border-bottom: 1px solid grey;
+                            }
+
+                            .shapes {
+                                position: relative;
+                                margin-top: 9px;
+                                width: 100%;
+                                height: 10px;
+                                // border-bottom: 0.5px solid grey;
+
+                                span {
+                                    position: absolute;
+                                }
+
+                                .circle {
+                                    width: 15px;
+                                    height: 15px;
+                                    border-radius: 50%;
+                                    background: gray;
+                                    top: 0;
+                                    left: 10px;
+                                }
+
+                                .short-bar {
+                                    width: 50px;
+                                    height: 5px;
+                                    border-radius: 8px;
+                                    background: silver;
+                                    top: 0;
+                                    left: 30px;
+                                }
+
+                                .long-bar {
+                                    width: 80px;
+                                    height: 5px;
+                                    border-radius: 8px;
+                                    background: silver;
+                                    top: 9px;
+                                    left: 30px;
+                                }
+
+                                .red-bar {
+                                    width: 20px;
+                                    height: 5px;
+                                    border-radius: 8px;
+                                    background: red;
+                                    top: 0;
+                                    right: 15px;
+                                }
+                            }
+
+                            @media screen and (max-width: 900px) {
+                                .shapes {
+                                    margin: 0;
+                                }
+                            }
+
+                            @media screen and (max-width: 650px) {
+                                .shapes {
+                                    margin: 0;
+                                    background: white;
+                                    height: 60px;
+
+                                    .circle {
+                                        top: 10px;
+                                    }
+
+                                    .short-bar {
+                                        top: 30px;
+                                        left: 5px;
+                                    }
+
+                                    .long-bar {
+                                        top: 40px;
+                                        left: 5px;
+                                    }
+
+                                    .red-bar {
+                                        top: 15px;
+                                        right: 10px;
+                                    }
+                                }
                             }
                         }
 
                         .browser-bottom {
                             height: 10px;
                             width: 100%;
-                            background: ghostwhite;
+                            background: silver;
                             border-bottom-left-radius: 2px;
                             border-bottom-right-radius: 2px;
                         }
@@ -276,6 +359,18 @@ $standard-padding: 15px;
 
                             &::before {
                                 background: rgba(white, 0.2);
+                            }
+
+                            .video {
+                                height: 80px;
+                                overflow: visible;
+
+                                video {
+                                    object-fit: cover;
+                                    height: 100%;
+                                    width: 100%;
+                                    border-bottom: 1px solid grey;
+                                }
                             }
                         }
                     }
