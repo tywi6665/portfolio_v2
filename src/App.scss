@@ -14,7 +14,7 @@ $standard-padding: 15px;
         background-color: white;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -514,6 +514,27 @@ $standard-padding: 15px;
             .contact-info {
                 // flex-basis: 50%;
             }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: fit-content;
+        padding: $standard-padding;
+        text-align: center;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+
+        h4,
+        p {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 50%;
         }
     }
 }
