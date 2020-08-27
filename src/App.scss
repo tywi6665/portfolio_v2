@@ -2,6 +2,7 @@ $standard-padding: 15px;
 
 .master-container {
     height: 100%;
+    width: 100%;
     display: grid;
 
     .navbar {
@@ -100,13 +101,30 @@ $standard-padding: 15px;
         }
     }
 
+    .background-image {
+        position: absolute;
+        background-image: url(Waves.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: right top;
+        z-index: -9999;
+
+        &-1 {
+            min-width: 100%;
+            max-width: 100%;
+            height: 400px;
+            top: -270px;
+            left: 0;
+        }
+    }
+
     .container-card {
         position: relative;
         width: fit-content;
-        background-image: url(Waves.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: right top -290px;
+        // background-image: url(Waves.png);
+        // background-repeat: no-repeat;
+        // background-size: 100%;
+        // background-position: right top -290px;
 
         // overflow-y: visible;
         // overflow-x: hidden;

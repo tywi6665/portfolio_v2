@@ -61,6 +61,8 @@ function App() {
         addedClass="container-card"
         addedID="projects-section"
       >
+        <div className="background-image background-image-1">
+        </div>
         {data.map((data, i) => (
           <SubContainer key={i}>
             <Card
