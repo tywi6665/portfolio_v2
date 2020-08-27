@@ -103,6 +103,11 @@ $standard-padding: 15px;
     .container-card {
         position: relative;
         width: fit-content;
+        background-image: url(Waves.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: right top -290px;
+
         // overflow-y: visible;
         // overflow-x: hidden;
 
@@ -530,7 +535,7 @@ $standard-padding: 15px;
 
         h4,
         p {
-            margin: 10px 0;
+            margin: 5px 0;
         }
 
         p {
