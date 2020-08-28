@@ -5,8 +5,8 @@ const Contact = () => {
         <div className="contact">
             <div className="contact-front">
                 <div className="contact-name">
-                    <p>TYLER WINSTEAD</p>
-                    <p>WEB DEVELOPER</p>
+                    <p className="name">TYLER WINSTEAD</p>
+                    <p className="title">WEB DEVELOPER</p>
                 </div>
                 <span></span>
                 <div className="contact-initials">

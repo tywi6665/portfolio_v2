@@ -533,17 +533,28 @@ $standard-padding: 15px;
 
                 .contact-name {
                     padding: 15px;
+                    text-align: right;
+
+                    p {
+                        margin: 10px 0;
+                        font-weight: bold;
+                    }
+
+                    .title {
+                        font-size: 75%;
+                    }
                 }
 
                 span {
                     height: 100%;
-                    width: 3px;
+                    width: 2px;
                     background: black;
                     margin: 0 20px;
+                    box-shadow: -4px 6px 10px 0px #000000;
                 }
 
                 .contact-initials {
-                    font-size: 25px;
+                    font-size: 50px;
                     font-weight: bold;
                 }
             }
