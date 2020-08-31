@@ -514,26 +514,43 @@ $standard-padding: 15px;
     }
 
     .container-contact {
+        // position: relative;
+
         .contact {
             cursor: pointer;
             width: 80%;
             max-width: 525px;
             height: 300px;
             margin: 0 auto;
-            background: grey;
             border-radius: 8px;
-            box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            perspective: 1000px;
+
+            &-card {
+                height: 100%;
+                width: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+                border-radius: 8px;
+                transition: transform 1s;
+                box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
+            }
+
+            &-face {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                border-radius: 8px;
+                backface-visibility: hidden;
+            }
+
+            &-card.toggle {
+                transform: rotateY(180deg);
+            }
 
             &-front {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-radius: 8px;
-                height: 100%;
-                width: 100%;
                 color: silver;
                 background: radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 115%);
 
@@ -564,6 +581,11 @@ $standard-padding: 15px;
                     font-weight: bold;
                     // text-shadow: -4px 6px 10px #000000;
                 }
+            }
+
+            &-back {
+                background: blue;
+                transform: rotateY(180deg);
             }
 
             // .contact-image {
