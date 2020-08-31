@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+
+    const [isToggled, setIsToggled] = useState(false);
+
     return (
-        <div className="contact">
+        <div className="contact" onClick={() => setIsToggled(!isToggled)}>
             <div className="contact-front">
                 <div className="contact-name">
                     <p className="name">TYLER WINSTEAD</p>
