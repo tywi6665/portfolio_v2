@@ -4,15 +4,12 @@ const Contact = () => {
 
     const [isToggled, setIsToggled] = useState(false);
 
-    const toggle = () => {
-        setIsToggled(!isToggled)
-        const card = document.getElementById("card")
-        card.classList.toggle("toggle")
-    }
-
     return (
         <div className="contact" >
-            <div id="card" className="contact-card" onClick={() => toggle()}>
+            <div id="card"
+                className={!isToggled ? "contact-card" : "contact-card toggle"}
+                onClick={() => setIsToggled(!isToggled)}
+            >
                 <div className="contact-front contact-face">
                     <div className="contact-name">
                         <p className="name">TYLER WINSTEAD</p>
@@ -27,9 +24,19 @@ const Contact = () => {
                     {/* <div className="contact-image">
                     <img src="./graphics/me.jpg" alt="me" />
                 </div> */}
+                    <p>Physically in Denver, CO USA
+                    {/* <br />
+                    With a World ... */}
+                    </p>
                     <div className="contact-info">
-                        <p><a href="mailto:tyletcole@gmail.com?subject=I%20Liked%20Your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" target="_blank" rel="noopener noreferrer">Email Me!!</a></p>
-                        <p><a href="https://github.com/tywi6665" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
+                        <div>
+                            <p><a href="mailto:tyletcole@gmail.com?subject=I%20Liked%20Your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" target="_blank" rel="noopener noreferrer">tyletcole@gmail.com</a><img src="./graphics/icons8-gmail.svg" alt="gmail" /></p>
+                            <p>719 661 0645<img src="./graphics/icons8-cell-phone-64.png" alt="phone" /></p>
+                        </div>
+                        <div>
+                            <p><img src="./graphics/icons8-website-64.png" alt="website" /><a href="https://www.tywi.dev" rel="noopener noreferrer">www.tywi.dev</a></p>
+                            <p><img src="./graphics/icons8-github-wire.svg" alt="github" /><a href="https://github.com/tywi6665" target="_blank" rel="noopener noreferrer">github.com/tywi6665</a></p>
+                        </div>
                     </div>
                 </div>
             </div>

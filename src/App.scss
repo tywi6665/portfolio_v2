@@ -103,7 +103,7 @@ $standard-padding: 15px;
 
     .background-image {
         position: absolute;
-        background-image: url(Waves.png);
+        background-image: url(./resources/Waves.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: right top;
@@ -538,6 +538,11 @@ $standard-padding: 15px;
             &-face {
                 height: 100%;
                 width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: silver;
+                background: radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 115%);
                 position: absolute;
                 border-radius: 8px;
                 backface-visibility: hidden;
@@ -548,12 +553,6 @@ $standard-padding: 15px;
             }
 
             &-front {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: silver;
-                background: radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 115%);
-
                 .contact-name {
                     padding: 15px;
                     text-align: right;
@@ -584,8 +583,63 @@ $standard-padding: 15px;
             }
 
             &-back {
-                background: blue;
                 transform: rotateY(180deg);
+                flex-direction: column;
+                font-weight: bold;
+
+                .contact-info {
+                    display: flex;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    div:nth-child(1) {
+                        p {
+                            justify-content: flex-end;
+                        }
+
+                        img {
+                            margin: 0 7.5px 0 15px;
+                        }
+                    }
+
+                    div:nth-child(2) {
+                        p {
+                            justify-content: flex-start;
+                        }
+
+                        img {
+                            margin: 0 15px 0 7.5px;
+                        }
+                    }
+
+                    img {
+                        width: 2em;
+                        margin: 0 15px;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        &:hover {
+                            animation: pulse 2s infinite;
+
+                            @keyframes pulse {
+                                0% {
+                                    transform: scale(1);
+                                }
+                                50% {
+                                    transform: scale(1.05);
+                                }
+                                100% {
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             // .contact-image {
