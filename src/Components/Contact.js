@@ -21,12 +21,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact-back contact-face">
-                    {/* <div className="contact-image">
-                    <img src="./graphics/me.jpg" alt="me" />
-                </div> */}
-                    <p>Physically in Denver, CO USA
-                    {/* <br />
-                    With a World ... */}
+                    <p>Based in Denver, CO USA
+                    <br />
+                    Will Work From Anywhere
                     </p>
                     <div className="contact-info">
                         <div>

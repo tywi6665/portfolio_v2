@@ -88,6 +88,9 @@ function App() {
         addedClass="container-contact"
         addedID="contact-section"
       >
+        <div className="contact-image">
+          <img src="./graphics/me.jpg" alt="me" />
+        </div>
         <Contact />
       </Container>
       <Footer />
