@@ -119,8 +119,8 @@ $standard-padding: 15px;
 
         &-2 {
             background-image: url(./resources/Wave1.svg);
-            background-size: 100%;
-            height: 800px;
+            background-size: cover;
+            height: 140%;
             top: 0;
         }
     }
@@ -464,24 +464,29 @@ $standard-padding: 15px;
         justify-content: center;
         position: relative;
 
-        .react-pdf {
-            &__Document {
-                background: #fff;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 8px;
-                box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
-            }
+        .file-window {
+            margin-top: 50px;
+            margin-bottom: 50px;
 
-            &__Page {
-                max-width: calc(100% - 2em);
-                // box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-                margin: 1em;
+            .react-pdf {
+                &__Document {
+                    background: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 8px;
+                    box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
+                }
 
-                svg {
-                    max-width: 100%;
-                    height: auto !important;
+                &__Page {
+                    max-width: calc(100% - 2em);
+                    // box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+                    margin: 1em;
+
+                    svg {
+                        max-width: 100%;
+                        height: auto !important;
+                    }
                 }
             }
         }

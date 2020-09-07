@@ -35,15 +35,7 @@ function App() {
       icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"], ["icons8-json-64.png", "JSON Data"]],
       animation: "",
       links: ["https://github.com/tywi6665/Out-of-This-World", "https://out-of-this-world.herokuapp.com/"]
-    },
-    // {
-    //   title: "Portfolio 1.0",
-    //   subTitle: "My first portfolio",
-    //   description: "",
-    //   icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"]],
-    //   animation: "portfolio_v1",
-    //   links: ["https://github.com/tywi6665/Portfolio", "https://tywi6665.herokuapp.com/main"]
-    // }
+    }
   ])
 
   return (
