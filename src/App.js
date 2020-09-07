@@ -80,6 +80,8 @@ function App() {
         addedClass="container-file-window"
         addedID="resume-section"
       >
+        <div className="background-image background-image-2">
+        </div>
         <FileWindow />
       </Container>
       <Container
