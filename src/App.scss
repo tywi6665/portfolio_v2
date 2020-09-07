@@ -128,28 +128,6 @@ $standard-padding: 15px;
     .container-card {
         position: relative;
         width: fit-content;
-        // background-image: url(Waves.png);
-        // background-repeat: no-repeat;
-        // background-size: 100%;
-        // background-position: right top -290px;
-
-        // overflow-y: visible;
-        // overflow-x: hidden;
-
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     background-image: url(wave-1.svg);
-        //     background-repeat: no-repeat;
-        //     background-size: auto;
-        //     // background-size: 100% 100%;
-        //     // display: block;
-        //     width: 100%;
-        //     max-width: 100%;
-        //     max-height: 245px;
-        //     top: -125px;
-        //     z-index: -10;
-        // }
 
         .card-screen {
             z-index: 5;
@@ -232,8 +210,6 @@ $standard-padding: 15px;
                             background: white;
 
                             video {
-                                // object-fit: cover;
-                                // height: 100%;
                                 width: 100%;
                                 border-bottom: 1px solid grey;
                             }
@@ -243,7 +219,6 @@ $standard-padding: 15px;
                                 margin-top: 9px;
                                 width: 100%;
                                 height: 10px;
-                                // border-bottom: 0.5px solid grey;
 
                                 span {
                                     position: absolute;
@@ -469,7 +444,6 @@ $standard-padding: 15px;
 
     @media screen and (max-width: 550px) {
         .card-inner {
-            // display: flex;
             flex-direction: column;
 
             .card-info-inner {
@@ -489,9 +463,6 @@ $standard-padding: 15px;
         align-items: center;
         justify-content: center;
         position: relative;
-
-        // &__document {
-        //     margin: 1em 0;
 
         .react-pdf {
             &__Document {
@@ -513,22 +484,14 @@ $standard-padding: 15px;
                     height: auto !important;
                 }
             }
-
-            // &__message {
-            //     padding: 20px;
-            //     color: white;
-            // }
         }
-        // }
     }
 
     .container-contact {
         display: flex;
         justify-content: center;
-        // height: 300px;
 
         .contact {
-            // flex-basis: 50%;
             cursor: pointer;
             width: 80%;
             max-width: 525px;
@@ -590,7 +553,6 @@ $standard-padding: 15px;
                 .contact-initials {
                     font-size: 50px;
                     font-weight: bold;
-                    // text-shadow: -4px 6px 10px #000000;
                 }
             }
 
@@ -658,14 +620,11 @@ $standard-padding: 15px;
 
         .contact-image {
             text-align: center;
-            // flex-basis: 50%;
             height: 300px;
             margin: 0 15px;
 
             img {
                 width: auto;
-                // max-width: 400px;
-                // min-width: 250px;
                 height: 100%;
                 border-radius: 8px;
                 box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
@@ -687,6 +646,7 @@ $standard-padding: 15px;
     .footer {
         width: 100%;
         height: fit-content;
+        margin-top: 50px;
         padding: $standard-padding;
         text-align: center;
         box-sizing: border-box;
