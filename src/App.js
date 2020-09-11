@@ -33,7 +33,7 @@ function App() {
       subTitle: "There's no better way to explore the solar system",
       description: "A React based application that uses D3.js to educate how amazing our corner of the universe is. Now go forth and explore!",
       icons: [["icons8-react-native.svg", "Built with React"], ["icons8-area-chart-64.png", "Data Visulization/D3.js"], ["icons8-json-64.png", "JSON Data"]],
-      animation: "",
+      animation: "out-of-this-world",
       links: ["https://github.com/tywi6665/Out-of-This-World", "https://out-of-this-world.herokuapp.com/"]
     }
   ])

@@ -22,8 +22,6 @@ const Contact = () => {
                 </div>
                 <div className="contact-back contact-face">
                     <p>Based in Denver, CO USA
-                    <br />
-                    Will Work From Anywhere
                     </p>
                     <div className="contact-info">
                         <div>
