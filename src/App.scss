@@ -1,4 +1,7 @@
 $standard-padding: 15px;
+$standard-black: #000000;
+$standard-white: #fff;
+$standard-border-radius: 8px;
 
 .master-container {
     height: 100%;
@@ -7,12 +10,13 @@ $standard-padding: 15px;
 
     .navbar {
         position: fixed;
+        background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
         top: 0;
         width: 100%;
         height: 60px;
         padding: $standard-padding;
         z-index: 100;
-        background-color: white;
+        background-color: $standard-white;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,7 +28,7 @@ $standard-padding: 15px;
 
         a {
             margin: 0 15px;
-            color: #000000;
+            color: $standard-black;
             text-decoration: none;
             cursor: pointer;
             position: relative;
@@ -36,7 +40,7 @@ $standard-padding: 15px;
                 left: 0;
                 width: 100%;
                 height: 1px;
-                background: #000000;
+                background: $standard-black;
                 opacity: 0;
                 transform: translateY(-10px);
                 transition: height 0.3s, opacity 0.3s, transform 0.3s;
@@ -60,7 +64,7 @@ $standard-padding: 15px;
                     left: 0;
                     width: 100%;
                     height: 1px;
-                    background: #000000;
+                    background: $standard-black;
                     opacity: 0;
                     transform: translateY(-10px);
                     transition: height 0.3s, opacity 0.3s, transform 0.3s;
@@ -135,7 +139,7 @@ $standard-padding: 15px;
             .screen {
                 width: 300px;
                 height: 200px;
-                background: transparent linear-gradient(-75deg, transparent 72.2%, rgba(white, 0.25) 72.2%);
+                background: transparent linear-gradient(-75deg, transparent 72.2%, rgba($standard-white, 0.25) 72.2%);
                 margin: 50px auto 0 auto;
                 position: relative;
                 transition: all 0.5s;
@@ -147,7 +151,7 @@ $standard-padding: 15px;
                     left: -15px;
                     right: -15px;
                     bottom: -15px;
-                    background: #1d1d1d linear-gradient(-75deg, #1d1d1d 70%, rgba(white, 0.25) 70%);
+                    background: #1d1d1d linear-gradient(-75deg, #1d1d1d 70%, rgba($standard-white, 0.25) 70%);
                     border-top-left-radius: 0.7em;
                     border-top-right-radius: 0.7em;
                     z-index: -2;
@@ -161,7 +165,7 @@ $standard-padding: 15px;
                     height: 5px;
                     top: -10px;
                     left: calc(50% - 5px);
-                    background: rgba(white, 0.2);
+                    background: rgba($standard-white, 0.2);
                     border-radius: 50%;
                     transition: all 0.5s;
                 }
@@ -207,7 +211,7 @@ $standard-padding: 15px;
                             height: 180px;
                             width: 100%;
                             overflow: hidden;
-                            background: white;
+                            background: $standard-white;
 
                             video {
                                 width: 100%;
@@ -236,7 +240,7 @@ $standard-padding: 15px;
                                 .short-bar {
                                     width: 50px;
                                     height: 5px;
-                                    border-radius: 8px;
+                                    border-radius: $standard-border-radius;
                                     background: silver;
                                     top: 0;
                                     left: 30px;
@@ -245,7 +249,7 @@ $standard-padding: 15px;
                                 .long-bar {
                                     width: 80px;
                                     height: 5px;
-                                    border-radius: 8px;
+                                    border-radius: $standard-border-radius;
                                     background: silver;
                                     top: 9px;
                                     left: 30px;
@@ -254,7 +258,7 @@ $standard-padding: 15px;
                                 .red-bar {
                                     width: 20px;
                                     height: 5px;
-                                    border-radius: 8px;
+                                    border-radius: $standard-border-radius;
                                     background: red;
                                     top: 0;
                                     right: 15px;
@@ -270,7 +274,7 @@ $standard-padding: 15px;
                             @media screen and (max-width: 650px) {
                                 .shapes {
                                     margin: 0;
-                                    background: white;
+                                    background: $standard-white;
                                     height: 60px;
 
                                     .circle {
@@ -373,7 +377,8 @@ $standard-padding: 15px;
                         .screen {
                             width: 240px;
                             height: 155px;
-                            background: transparent linear-gradient(-75deg, transparent 72.9%, rgba(white, 0.25) 72.9%);
+                            background: transparent
+                                linear-gradient(-75deg, transparent 72.9%, rgba($standard-white, 0.25) 72.9%);
 
                             &::after {
                                 border-radius: 0.7em;
@@ -405,7 +410,7 @@ $standard-padding: 15px;
                             }
 
                             &::before {
-                                background: rgba(white, 0.2);
+                                background: rgba($standard-white, 0.2);
                             }
 
                             .video {
@@ -470,11 +475,11 @@ $standard-padding: 15px;
 
             .react-pdf {
                 &__Document {
-                    background: #fff;
+                    background: $standard-white;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    border-radius: 8px;
+                    border-radius: $standard-border-radius;
                     box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
                 }
 
@@ -502,7 +507,7 @@ $standard-padding: 15px;
             max-width: 525px;
             height: 300px;
             margin: 0 15px;
-            border-radius: 8px;
+            border-radius: $standard-border-radius;
             perspective: 1000px;
 
             &-card {
@@ -510,7 +515,7 @@ $standard-padding: 15px;
                 width: 100%;
                 position: relative;
                 transform-style: preserve-3d;
-                border-radius: 8px;
+                border-radius: $standard-border-radius;
                 transition: transform 1s;
                 box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
             }
@@ -524,7 +529,7 @@ $standard-padding: 15px;
                 color: silver;
                 background: radial-gradient(ellipse at center, #7d7e7d 0%, #0e0e0e 115%);
                 position: absolute;
-                border-radius: 8px;
+                border-radius: $standard-border-radius;
                 backface-visibility: hidden;
             }
 
@@ -534,7 +539,7 @@ $standard-padding: 15px;
 
             &-front {
                 .contact-name {
-                    padding: 15px;
+                    padding: $standard-padding;
                     text-align: right;
 
                     p {
@@ -552,7 +557,7 @@ $standard-padding: 15px;
                     width: 2px;
                     background: #a9a9a9;
                     margin: 0 20px;
-                    box-shadow: -4px 6px 10px 0px #000000;
+                    box-shadow: -4px 6px 10px 0px $standard-black;
                 }
 
                 .contact-initials {
@@ -631,7 +636,7 @@ $standard-padding: 15px;
             img {
                 width: auto;
                 height: 100%;
-                border-radius: 8px;
+                border-radius: $standard-border-radius;
                 box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.3);
             }
         }
