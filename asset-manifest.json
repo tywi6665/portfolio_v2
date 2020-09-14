@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/porfolio_v2/static/css/main.f62961de.chunk.css",
-    "main.js": "/porfolio_v2/static/js/main.50822088.chunk.js",
-    "main.js.map": "/porfolio_v2/static/js/main.50822088.chunk.js.map",
-    "runtime-main.js": "/porfolio_v2/static/js/runtime-main.a28df02d.js",
-    "runtime-main.js.map": "/porfolio_v2/static/js/runtime-main.a28df02d.js.map",
-    "static/js/2.f85e6757.chunk.js": "/porfolio_v2/static/js/2.f85e6757.chunk.js",
-    "static/js/2.f85e6757.chunk.js.map": "/porfolio_v2/static/js/2.f85e6757.chunk.js.map",
-    "7a828ef684b970aabf06.worker.js": "/porfolio_v2/7a828ef684b970aabf06.worker.js",
-    "7a828ef684b970aabf06.worker.js.LICENSE.txt": "/porfolio_v2/7a828ef684b970aabf06.worker.js.LICENSE.txt",
-    "7a828ef684b970aabf06.worker.js.map": "/porfolio_v2/7a828ef684b970aabf06.worker.js.map",
-    "index.html": "/porfolio_v2/index.html",
-    "precache-manifest.4ad63332b94a01cce8cb8503b45f1cdc.js": "/porfolio_v2/precache-manifest.4ad63332b94a01cce8cb8503b45f1cdc.js",
-    "service-worker.js": "/porfolio_v2/service-worker.js",
-    "static/css/main.f62961de.chunk.css.map": "/porfolio_v2/static/css/main.f62961de.chunk.css.map",
-    "static/js/2.f85e6757.chunk.js.LICENSE.txt": "/porfolio_v2/static/js/2.f85e6757.chunk.js.LICENSE.txt",
-    "static/media/Tyler_Winstead_Resume_Redacted.pdf": "/porfolio_v2/static/media/Tyler_Winstead_Resume_Redacted.03135c56.pdf",
-    "static/media/App.scss": "/porfolio_v2/static/media/Waves.0b178787.png"
+    "main.css": "/portfolio_v2/static/css/main.b5ae3398.chunk.css",
+    "main.js": "/portfolio_v2/static/js/main.df6fda8b.chunk.js",
+    "main.js.map": "/portfolio_v2/static/js/main.df6fda8b.chunk.js.map",
+    "runtime-main.js": "/portfolio_v2/static/js/runtime-main.2914acf5.js",
+    "runtime-main.js.map": "/portfolio_v2/static/js/runtime-main.2914acf5.js.map",
+    "static/js/2.67e6da31.chunk.js": "/portfolio_v2/static/js/2.67e6da31.chunk.js",
+    "static/js/2.67e6da31.chunk.js.map": "/portfolio_v2/static/js/2.67e6da31.chunk.js.map",
+    "16e534c0d6b045d9afc5.worker.js": "/portfolio_v2/16e534c0d6b045d9afc5.worker.js",
+    "16e534c0d6b045d9afc5.worker.js.LICENSE.txt": "/portfolio_v2/16e534c0d6b045d9afc5.worker.js.LICENSE.txt",
+    "16e534c0d6b045d9afc5.worker.js.map": "/portfolio_v2/16e534c0d6b045d9afc5.worker.js.map",
+    "index.html": "/portfolio_v2/index.html",
+    "precache-manifest.6b34d7c5b5f5504b7a8a45f20d6b24ab.js": "/portfolio_v2/precache-manifest.6b34d7c5b5f5504b7a8a45f20d6b24ab.js",
+    "service-worker.js": "/portfolio_v2/service-worker.js",
+    "static/css/main.b5ae3398.chunk.css.map": "/portfolio_v2/static/css/main.b5ae3398.chunk.css.map",
+    "static/js/2.67e6da31.chunk.js.LICENSE.txt": "/portfolio_v2/static/js/2.67e6da31.chunk.js.LICENSE.txt",
+    "static/media/Tyler_Winstead_Resume_Redacted.pdf": "/portfolio_v2/static/media/Tyler_Winstead_Resume_Redacted.03135c56.pdf",
+    "static/media/App.scss": "/portfolio_v2/static/media/Waves.0b178787.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a28df02d.js",
-    "static/js/2.f85e6757.chunk.js",
-    "static/css/main.f62961de.chunk.css",
-    "static/js/main.50822088.chunk.js"
+    "static/js/runtime-main.2914acf5.js",
+    "static/js/2.67e6da31.chunk.js",
+    "static/css/main.b5ae3398.chunk.css",
+    "static/js/main.df6fda8b.chunk.js"
   ]
 }
