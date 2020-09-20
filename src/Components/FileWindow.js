@@ -22,7 +22,11 @@ const FileWindow = () => {
                 renderMode="svg"
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                <Page pageNumber={pageNumber} />
+                <Page pageNumber={pageNumber}
+                    renderAnnotationLayer={false}
+                    renderInteractiveForms={false}
+                    renderTextLayer={false}
+                />
             </Document>
         </div>
     );

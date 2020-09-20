@@ -25,7 +25,7 @@ const Contact = () => {
                     </p>
                     <div className="contact-info">
                         <div>
-                            <p><a href="mailto:tyletcole@gmail.com?subject=I%20Liked%20Your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" target="_blank" rel="noopener noreferrer">tyletcole@gmail.com</a><img src="./graphics/icons8-gmail.svg" alt="gmail" /></p>
+                            <p><a href="mailto:tyler.winstead6665@gmail.com?subject=I%20Liked%20Your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" target="_blank" rel="noopener noreferrer">tyler.winstead6665@gmail.com</a><img src="./graphics/icons8-gmail.svg" alt="gmail" /></p>
                             <p>719 661 0645<img src="./graphics/icons8-cell-phone-64.png" alt="phone" /></p>
                         </div>
                         <div>
