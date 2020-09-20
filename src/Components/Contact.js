@@ -29,7 +29,7 @@ const Contact = () => {
                             <p>719 661 0645<img src="./graphics/icons8-cell-phone-64.png" alt="phone" /></p>
                         </div>
                         <div>
-                            <p><img src="./graphics/icons8-website-64.png" alt="website" /><a href="https://www.tywi.dev" rel="noopener noreferrer">www.tywi.dev</a></p>
+                            <p><img src="./graphics/icons8-website-64.png" alt="website" /><a href="https://tywi.dev" rel="noopener noreferrer">tywi.dev</a></p>
                             <p><img src="./graphics/icons8-github-wire.svg" alt="github" /><a href="https://github.com/tywi6665" target="_blank" rel="noopener noreferrer">github.com/tywi6665</a></p>
                         </div>
                     </div>
