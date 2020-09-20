@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio_v2/static/css/main.b5ae3398.chunk.css",
-    "main.js": "/portfolio_v2/static/js/main.df6fda8b.chunk.js",
-    "main.js.map": "/portfolio_v2/static/js/main.df6fda8b.chunk.js.map",
-    "runtime-main.js": "/portfolio_v2/static/js/runtime-main.2914acf5.js",
-    "runtime-main.js.map": "/portfolio_v2/static/js/runtime-main.2914acf5.js.map",
-    "static/js/2.67e6da31.chunk.js": "/portfolio_v2/static/js/2.67e6da31.chunk.js",
-    "static/js/2.67e6da31.chunk.js.map": "/portfolio_v2/static/js/2.67e6da31.chunk.js.map",
-    "16e534c0d6b045d9afc5.worker.js": "/portfolio_v2/16e534c0d6b045d9afc5.worker.js",
-    "16e534c0d6b045d9afc5.worker.js.LICENSE.txt": "/portfolio_v2/16e534c0d6b045d9afc5.worker.js.LICENSE.txt",
-    "16e534c0d6b045d9afc5.worker.js.map": "/portfolio_v2/16e534c0d6b045d9afc5.worker.js.map",
-    "index.html": "/portfolio_v2/index.html",
-    "precache-manifest.d958595340bd4760b5a6672f7026f580.js": "/portfolio_v2/precache-manifest.d958595340bd4760b5a6672f7026f580.js",
-    "service-worker.js": "/portfolio_v2/service-worker.js",
-    "static/css/main.b5ae3398.chunk.css.map": "/portfolio_v2/static/css/main.b5ae3398.chunk.css.map",
-    "static/js/2.67e6da31.chunk.js.LICENSE.txt": "/portfolio_v2/static/js/2.67e6da31.chunk.js.LICENSE.txt",
-    "static/media/Tyler_Winstead_Resume_Redacted.pdf": "/portfolio_v2/static/media/Tyler_Winstead_Resume_Redacted.03135c56.pdf",
-    "static/media/App.scss": "/portfolio_v2/static/media/Waves.0b178787.png"
+    "main.css": "/static/css/main.cbeacf77.chunk.css",
+    "main.js": "/static/js/main.c530b21d.chunk.js",
+    "main.js.map": "/static/js/main.c530b21d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.38faae8c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.38faae8c.js.map",
+    "static/js/2.ac6e3b22.chunk.js": "/static/js/2.ac6e3b22.chunk.js",
+    "static/js/2.ac6e3b22.chunk.js.map": "/static/js/2.ac6e3b22.chunk.js.map",
+    "e60b15daa51dd5ca873c.worker.js": "/e60b15daa51dd5ca873c.worker.js",
+    "e60b15daa51dd5ca873c.worker.js.LICENSE.txt": "/e60b15daa51dd5ca873c.worker.js.LICENSE.txt",
+    "e60b15daa51dd5ca873c.worker.js.map": "/e60b15daa51dd5ca873c.worker.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1e8557cce3f1e21bbcb41f576d590b26.js": "/precache-manifest.1e8557cce3f1e21bbcb41f576d590b26.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.cbeacf77.chunk.css.map": "/static/css/main.cbeacf77.chunk.css.map",
+    "static/js/2.ac6e3b22.chunk.js.LICENSE.txt": "/static/js/2.ac6e3b22.chunk.js.LICENSE.txt",
+    "static/media/Tyler_Winstead_Resume_Redacted.pdf": "/static/media/Tyler_Winstead_Resume_Redacted.03135c56.pdf",
+    "static/media/App.scss": "/static/media/Waves.0b178787.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2914acf5.js",
-    "static/js/2.67e6da31.chunk.js",
-    "static/css/main.b5ae3398.chunk.css",
-    "static/js/main.df6fda8b.chunk.js"
+    "static/js/runtime-main.38faae8c.js",
+    "static/js/2.ac6e3b22.chunk.js",
+    "static/css/main.cbeacf77.chunk.css",
+    "static/js/main.c530b21d.chunk.js"
   ]
 }
