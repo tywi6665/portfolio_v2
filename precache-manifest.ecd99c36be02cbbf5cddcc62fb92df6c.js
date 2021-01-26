@@ -8,11 +8,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/e60b15daa51dd5ca873c.worker.js.LICENSE.txt"
   },
   {
-    "revision": "6ec2fdd8b4034196b4465af6688b50da",
+    "revision": "80ee498e3975e92f8ca9a4ca1a92c7f7",
     "url": "/index.html"
   },
   {
-    "revision": "174903a5f9ed3398b471",
+    "revision": "6714da64f3864c5c85d7",
     "url": "/static/css/main.1061fd3c.chunk.css"
   },
   {
@@ -24,16 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.c3e50b65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "174903a5f9ed3398b471",
-    "url": "/static/js/main.79d62fae.chunk.js"
+    "revision": "6714da64f3864c5c85d7",
+    "url": "/static/js/main.77c9776d.chunk.js"
   },
   {
     "revision": "1060075588c1c0a4b0cb",
     "url": "/static/js/runtime-main.38faae8c.js"
   },
   {
-    "revision": "ae96dbaf476979d12670f358f43c34ab",
-    "url": "/static/media/Tyler_Winstead_Resume_Redacted.ae96dbaf.pdf"
+    "revision": "08323750ea24c49517d8cfbfa5cd5650",
+    "url": "/static/media/Tyler_Winstead_Resume_Redacted.08323750.pdf"
   },
   {
     "revision": "a983fec6d0b50dc2adda61aea0f71854",
